@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOGONON_FLEXBOX</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #f7f7f7;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 24px;
+        }
+        .card h2 {
+            margin: 15px 0;
+            font-size: 28px;
+            color: #000;
+        }
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .card ul li {
+            margin: 10px 0;
+            font-size: 16px;
+         }
+         .card ul li span {
+             margin-right: 5px;
+             color: green;
+             font-weight: bold;
+        }
+        .card .deals li span.red {
+            color: red;
+        }
+        .card button {
+            background: #ff7a00;
+            color: white;
+            border: none;
+            border-radius: 5px;
+             padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .card button:hover {
+            background: #e66b00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+            <div class="card">
+            <ul class="deals">
+                <h3>Basic</h3>
+                <h2>$11.99/month</h2>
+                <li><span>&#10004;</span> 10GB Storage</li>
+                <li><span>&#10004;</span> 1 User</li>
+                <li><span class="red">&#128711;</span> Support</li>  
+                <button>Sign Up</button> 
+            </ul>
+            </div>
+             <div class="card">
+            <ul class="deals">
+                <h3>Standard</h3>
+                <h2>19.99/month</h2>
+                <li><span>&#10004;</span>50 GB Storage</li>
+                <li><span>&#10004;</span>5 Users</li>
+                <li><span>&#10004;</span>Phone & Email Support</li>
+                <button>Sign Up</button>
+            </ul>
+            </div>
+            <div class="card">
+            <ul class="deals">
+                <h3>Premium</h3>
+                <h2>49.99/month</h2>
+                <li><span>&#10004;</span>100 GB Storage</li>
+                <li><span>&#10004;</span>10 Users</li>
+                <li><span>&#10004;</span>24/7 Support</li>
+                <button>Sign Up</button>
+            </ul>
+        </div>
+      </div>
+</body>
+</html>
